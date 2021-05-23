@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    background-color: #212529;
+    opacity: 0.99;
+}
+
+.home{
+    margin-top: 50%;
+    background-color: #f3f3f3;
+    padding: 3% 0 3% 0;
+    margin: 5px;
+}
+
+.home1{
+    padding-top: 5%;
+}
+
+@media only screen and (max-width:1200px)
+{
+    .home1{
+        padding-top: 9%;
+    }
+}
+
+@media only screen and (max-width:800px)
+{
+    .home1{
+        padding-top: 13%;
+    }
+}
+
+
 .container .col-lg-7{
     display: flex;
     float: left;
@@ -18,8 +49,9 @@
     color: #fff;
 }
 
-#grad{
-    border: 5px golid grey;
+
+.card .about{
+    background-color: #212529;
 }
 
 .container1{
@@ -41,70 +73,70 @@
 
 .html{
     width: 75%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .js{
     width: 70%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .bootstrap{
     width: 78%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .react{
     width: 60%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .iot{
     width: 65%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .cpp{
     width: 83%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .c{
     width: 75%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .java{
     width: 80%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .python{
     width: 75%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
 
 .php{
     width: 70%;
-    background-color: rgb(39, 16, 250);
+    background-color: #0D6EFD;
     height: 18px;
     border-radius: 4px;
 }
@@ -112,59 +144,160 @@
 .my_form{
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-footer{
-    position: relative;
+
+.container2{
+    padding: 1em;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22em);
+    justify-content: center;
+    grid-gap: 2em;
+    grid-auto-rows: minmax(31em, auto);
+}
+
+.container2 .items2{
+    transition: transform 0.3s;
+    border-radius: 15px;
+}
+
+.container2 .items2:hover{
+    transform: scale(1.08);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container2 .items2 .image1{
+    height: 50%;
     width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    background: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("Images/graduate.jpg");
+    background-size: cover;
 }
 
-footer .container{
+.container2 .items2 .image2{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("Images/science.jpg");
+    background-size: cover;
+}
+
+.container2 .items2 .image3{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url("Images/secondary.jpg");
+    background-size: cover;
+}
+
+.container2 .items2 .text{
+    padding: 1rem;
+}
+
+.container2 .items2 .text h5{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.container2 > div{
+    background-color: silver;
+}
+
+.container2 > div:nth-child(odd){
+    background-color: #212529;
+}
+
+#odd h3, #odd p{
+    color: white;
+}
+
+#odd h5{
+    color:silver;
+
+}
+
+.footer{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #212529;
+    color: #fff;
 }
 
-footer .container .sec{
-    margin-right: 30px;
+.footer h2{
+    color: #ffff;
 }
 
-footer .container .sec.aboutme{
+.footeritems1{
+    padding: 3em;
     width: 40%;
 }
 
-footer .container h2{
-    position: relative;
+.footeritems1 p{
+    padding-top: 10px;
+}
+
+.footeritems2{
+    padding: 3em;
+    width: 30%;
+}
+
+.footeritems3{
+    padding: 3em;
+    width: 30%;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footeritems1{
+        padding: 3em;
+        width: 80%;
+    }
+    
+    .footeritems1 p{
+        padding-top: 10px;
+    }
+    
+    .footeritems2{
+        padding: 3em;
+        width: 80%;
+    }
+    
+    .footeritems3{
+        padding: 3em;
+        width: 80%;
+    }
+}
+
+.footeritems3 ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.footeritems3 ul li a{
+    text-decoration: none;
     color: #fff;
-    font-weight: 500;
-    margin-bottom: 15px;
 }
 
-footer .container h2:before{
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: #ed2939;
-}
-
-footer p{
-    color: #999;
+.footeritems3 ul li a:hover{
+    color: #ed2939;
 }
 
 .sci{
     margin-top: 20px;
     display: flex;
+    padding-left: 10px;
 }
 
 .sci li{
@@ -190,36 +323,16 @@ footer p{
 }
 
 .sci li a .fas,
-.sci li a .fab{
+.sci li a .fab,
+.sci li a .fa{
     color: #fff;
     font-size: 20px;
 }
 
-.quickLinks{
-    position: relative;
-    width: 25%;
-}
-
-.quickLinks ul li{
-    list-style: none;
-}
-
-.quickLinks ul li a{
-    color: #999;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.quickLinks ul li a:hover{
-    color: white;
-}
-
 .copyright{
-    width: 100%;
-    height: 40px;
-    background: #181818;
-    padding: 8px 100px;
     text-align: center;
-    color: #999;
+    padding: 1em;
+    padding-top: 0;
+    background-color: #212529;
+    color: #fff;
 }
